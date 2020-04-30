@@ -9,10 +9,27 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_url = 'https://www.googleapis.com/drive/v3/files/1LTc56gmAsUul0NT3Xjmsl3P9QFNtEdfT?alt=media&key=AIzaSyBXg1Ha_hC6AaTz0pQ3u1JzLcWeGdFP1Og'
+export_file_name = 'CNN_SNACKDETECTOR_MODEL_2.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['bamischijf',
+ 'berenklauw',
+ 'bitterballen',
+ 'frikandel',
+ 'frikandel_speciaal',
+ 'frites',
+ 'frites_mayo',
+ 'frites_sate',
+ 'frites_speciaal',
+ 'kaassouffle',
+ 'kipcorn',
+ 'kipnuggets',
+ 'knoepert',
+ 'kroket',
+ 'mexicano',
+ 'sitostick',
+ 'smulrol',
+ 'vlammetjes']
 path = Path(__file__).parent
 
 app = Starlette()
